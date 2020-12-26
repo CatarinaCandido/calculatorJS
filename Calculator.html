@@ -13,13 +13,22 @@
 <body>
 <container id="calculatorBody">
 
+    <h1 id="calculatorName"> Calculator </h1>
+
     <input id="screen" disabled="disabled">
 
+    <div id="calculatorHeader">
+        <button class="btn" id="reset" type="button" onclick="resetCalculator()"><i class="fas fa-trash"></i> </button>
+        <button class="btn" id="powerOff" type="button" onclick="powerOff()"> <i class="fas fa-power-off"></i></button>
+    </div>
+
+
     <container id="operators">
-    <button class="btn" id="multiply" type="button" onclick="multi()"><i class="fas fa-times"></i></button>
-    <button class="btn" id="divide" type="button" onclick="divide()"><i class="fas fa-divide"></i></button>
-    <button class="btn" id="sum" type="button" onclick="sum()"><i class="fas fa-plus"></i></button>
-    <button class="btn" id="subtraction" type="button" onclick="sub()"><i class="fas fa-minus"></i></button>
+
+    <button class="btn" id="multiply" type="button" onclick="operationType('*')"><i class="fas fa-times"></i></button>
+    <button class="btn" id="divide" type="button" onclick="operationType('/')"><i class="fas fa-divide"></i></button>
+    <button class="btn" id="sum" type="button" onclick="operationType('+')"><i class="fas fa-plus"></i></button>
+    <button class="btn" id="subtraction" type="button" onclick="operationType('-')"><i class="fas fa-minus"></i></button>
     <button class="btn" id="equal" type="button" onclick="equal()"><i class="fas fa-equals"></i></button>
     </container>
 
