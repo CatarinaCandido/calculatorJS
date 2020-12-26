@@ -29,7 +29,6 @@ function equal(){
      switch (operation) {
 
          case '+':
-
              result = (parseInt(result)+parseInt(num1))
              document.getElementById('screen').value = result
              num1 = null;
@@ -57,30 +56,24 @@ function equal(){
      if(document.getElementById('screen').value === 'NaN'){
          document.getElementById('screen').value = ' !Error!'
      }
-
 }
 
 function powerOff() {
 
      setTimeout(function () {
          document.getElementById('screen').value = ''
-     },2000)
+     },500)
 
     if(power == false){
         document.getElementById('screen').value = ' Welcome!'
         power = true
-
     } else{
         document.getElementById('screen').value = 'Goodbye!'
         power = false
-
     }
-
-
 }
 
 function resetCalculator() {
-
      num1 = null;
      result = null;
      operationReady = null;

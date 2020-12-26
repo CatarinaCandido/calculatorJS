@@ -5,8 +5,9 @@
     margin: 70px auto;
     width: 450px;
     height: 600px;
-    background: #faad78;
-    border: #beefe0 5px solid;
+    background: #302f2d;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px #070606;
 }
 
 #calculatorHeader{
@@ -23,14 +24,12 @@
 
 #screen{
     display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto;
     height: 60px;
     width: 400px;
     background: #e2faec;
-    border: #beefe0 5px solid;
     font-size: 34px;
+    border-radius: 5%;
 }
 
 #operators{
@@ -63,6 +62,7 @@
     border: #beefe0 5px solid;
     border-radius: 20%;
     background: #d9d9db;
+    box-shadow: 5px 5px #070606;
 }
 
 #zero{
@@ -71,13 +71,11 @@
 }
 
 
-
-
-
 #reset,#powerOff{
     margin: 0px 20px;
     clear: both;
     float: left;
+    box-shadow: 5px 5px #070606;
 }
 
 
@@ -89,6 +87,7 @@
     border: #beefe0 5px solid;
     border-radius: 20%;
     background: #d9d9db;
+    box-shadow: 5px 5px #070606;
 }
 
 .btn-num:hover,.btn:hover{
